@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 //! TOP APP BAR
-import 'package:flutter_azul/View/topappbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,8 +29,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //****************************************************************
-      //* Pagina principal
+      /// Esta função retorna a soma de dois números.
+      ///
+      /// Você pode usar essa função para adicionar dois inteiros ou decimais.
       body: Column(
         children: [
           //****************************************************************
@@ -45,9 +45,7 @@ class _HomePageState extends State<HomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    
-                  ],
+                  children: [],
                 )),
           ),
           //****************************************************************
