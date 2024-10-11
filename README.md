@@ -1,16 +1,23 @@
-# flutter_azul
+# University Sensor Web Interface
 
-A new Flutter project.
+This project aims to create a web interface for communicating with sensors deployed at a university. It is currently in an experimental stage.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+The web interface facilitates interaction with sensors located across various university sites. Sensor data is collected and stored in a MongoDB database hosted on macOS. The website processes this data to provide users with valuable insights and a user-friendly interface for monitoring and analyzing sensor readings.
 
-A few resources to get you started if this is your first Flutter project:
+## Project Partnership
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project is a collaboration with the IADE - Creating Creators university for a master's project.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies Used
+
+- **Flutter:** Framework used for developing the web interface.
+- **MongoDB:** NoSQL database used for storing sensor data.
+- **macOS:** Operating system hosting the MongoDB database.
+
+## Features
+
+- Real-time visualization of sensor data.
+- Historical data analysis and reporting.
+- User-friendly interface for monitoring sensor readings.
