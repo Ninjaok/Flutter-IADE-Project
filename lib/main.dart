@@ -10,6 +10,11 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
+
+  /// Esta função constrói a interface principal do aplicativo.
+  ///
+  /// `build` retorna um widget que representa o ponto de entrada do aplicativo,
+  /// usando a estrutura Material Design e desativa o banner de debug.
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -29,9 +34,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /// Esta função retorna a soma de dois números.
-      ///
-      /// Você pode usar essa função para adicionar dois inteiros ou decimais.
       body: Column(
         children: [
           //****************************************************************
