@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-//! TOP APP BAR
+//import parts of the application (TopAppBar, Page)
+import 'view/topappbar.dart';
+import 'view/page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
 
-  /// Esta função constrói a interface principal do aplicativo.
+  /// This fuction builds the main interface of the application.
   ///
-  /// `build` retorna um widget que representa o ponto de entrada do aplicativo,
-  /// usando a estrutura Material Design e desativa o banner de debug.
+  /// `build` returns a widget that represents the entry point of the application,
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -27,7 +28,7 @@ class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState(); // Implementa createState
+  State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
@@ -36,30 +37,15 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Column(
         children: [
-          //****************************************************************
-          //* TopAppBar
-          Container(
-            color: Colors.red,
-            child: SizedBox(
-                width: MediaQuery.of(context).size.width,
-                //  width: MediaQuery.of(context).size.width * 0.4,
-                height: 135,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [],
-                )),
-          ),
-          //****************************************************************
-          //* Pagina
-          Expanded(
-            child: Container(
-              color: Colors.blue,
-              child: const Center(
-                child: Text("Hello World"),
-              ),
-            ),
-          ),
+          /// This Function returns the top app bar of the application.
+          ///
+          ///
+          TopAppBar(),
+
+          /// This Function returns the main page of the application.
+          ///
+          /// Basic all bottom part of the application. (like Webpage)
+          MainPage(),
         ],
       ),
     );
