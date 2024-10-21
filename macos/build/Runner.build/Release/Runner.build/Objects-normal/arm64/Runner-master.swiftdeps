@@ -1,0 +1,10 @@
+version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
+options: "79fb953cf41031807ae8872b897b105d5572d5e0b4b2aaa208411b8ee3f17090"
+build_start_time: [1729129840, 77509000]
+build_end_time: [1729129848, 352574000]
+inputs:
+  "/Users/luanribeiro/Developer/Projetos /flutter_azul/macos/Flutter/GeneratedPluginRegistrant.swift": [1729129749, 498003092]
+  "/Users/luanribeiro/Developer/Projetos /flutter_azul/macos/Runner/AppDelegate.swift": [1726132694, 0]
+  "/Users/luanribeiro/Developer/Projetos /flutter_azul/macos/Runner/MainFlutterWindow.swift": [1726132694, 0]
+  ? "/Users/luanribeiro/Developer/Projetos /flutter_azul/macos/build/Runner.build/Release/Runner.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1729129839, 994967718]

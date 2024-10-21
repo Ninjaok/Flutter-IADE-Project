@@ -1,0 +1,19 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/luanribeiro/Developer/Projetos /flutter_azul/macos/build/Release/flutter_azul.app/Contents/MacOS/flutter_azul'
+relocations:
+  - { offset: 0xCD375, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul17MainFlutterWindowC12awakeFromNibyyFTo', symObjAddr: 0x0, symBinAddr: 0x100001520, symSize: 0xF0 }
+  - { offset: 0xCD480, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul17MainFlutterWindowCMa', symObjAddr: 0x1A0, symBinAddr: 0x1000016C0, symSize: 0x14 }
+  - { offset: 0xCD51C, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul17MainFlutterWindowC12awakeFromNibyyFTo', symObjAddr: 0x0, symBinAddr: 0x100001520, symSize: 0xF0 }
+  - { offset: 0xCD620, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul17MainFlutterWindowC11contentRect9styleMask7backing5deferACSo6CGRectV_So013NSWindowStyleI0VSo18NSBackingStoreTypeVSbtcfcTo', symObjAddr: 0xF0, symBinAddr: 0x100001610, symSize: 0x80 }
+  - { offset: 0xCD67A, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul17MainFlutterWindowCfD', symObjAddr: 0x170, symBinAddr: 0x100001690, symSize: 0x30 }
+  - { offset: 0xCD77E, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul11AppDelegateC47applicationShouldTerminateAfterLastWindowClosedySbSo13NSApplicationCFTo', symObjAddr: 0x0, symBinAddr: 0x1000016E0, symSize: 0x10 }
+  - { offset: 0xCD80F, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x70, symBinAddr: 0x100001750, symSize: 0x30 }
+  - { offset: 0xCD859, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul11AppDelegateCMa', symObjAddr: 0xA0, symBinAddr: 0x100001780, symSize: 0x14 }
+  - { offset: 0xCD89D, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul11AppDelegateC47applicationShouldTerminateAfterLastWindowClosedySbSo13NSApplicationCFTo', symObjAddr: 0x0, symBinAddr: 0x1000016E0, symSize: 0x10 }
+  - { offset: 0xCD8CA, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul11AppDelegateCACycfcTo', symObjAddr: 0x10, symBinAddr: 0x1000016F0, symSize: 0x30 }
+  - { offset: 0xCD905, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul11AppDelegateCfD', symObjAddr: 0x40, symBinAddr: 0x100001720, symSize: 0x30 }
+  - { offset: 0xCDA31, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul19ResourceBundleClass33_90B87FAA205D2A15795F1FC765834E17LLCfD', symObjAddr: 0x0, symBinAddr: 0x1000017A0, symSize: 0x20 }
+  - { offset: 0xCDA73, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul19ResourceBundleClass33_90B87FAA205D2A15795F1FC765834E17LLCMa', symObjAddr: 0x20, symBinAddr: 0x1000017C0, symSize: 0x14 }
+  - { offset: 0xCDA8E, size: 0x8, addend: 0x0, symName: '_$s12flutter_azul19ResourceBundleClass33_90B87FAA205D2A15795F1FC765834E17LLCfD', symObjAddr: 0x0, symBinAddr: 0x1000017A0, symSize: 0x20 }
+...
