@@ -19,15 +19,15 @@ class TopAppBarRight extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: ButtonTabBarAction(),
+                      child: ButtonTabBarAction(title: 'Button 1'),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: ButtonTabBarAction(),
+                      child: ButtonTabBarAction(title: 'Button 2'),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: ButtonTabBarAction(),
+                      child: ButtonTabBarAction(title: 'Button 3'),
                     ),
                   ],
                 )))
@@ -39,18 +39,27 @@ class TopAppBarRight extends StatelessWidget {
 class ButtonTabBarAction extends StatelessWidget {
   const ButtonTabBarAction({
     super.key,
+    required this.title,
   });
+
+  // A função que imprime o título
+  void test(String title) {
+    print(title);
+    // Coloque aqui a lógica que deseja executar ao clicar
+  }
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         ElevatedButton(
-          onPressed: () {},
-          // style: ButtonStyle(elevation: MaterialStateProperty(12.0 )),
+          // Passando uma função anônima que será executada ao pressionar o botão
+          onPressed: () => test(title),
           style: ElevatedButton.styleFrom(
               elevation: 12.0, textStyle: const TextStyle(color: Colors.white)),
-          child: const Text('__Button__'),
+          child: Text(title),
         ),
       ],
     );
