@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 //* File where the TopAppBarRight class is located and his dependencies
-import 'components/topappbarright.dart';
+import 'components/topappbarleft.dart';
 //*  File where the TopAppCenter class is located and his dependencies
 import 'components/topappcenter.dart';
 //* File where the TopAppBarLeft class is located and his dependencies
-import 'components/topappbarleft.dart';
+import 'components/s.dart';
 
 class TopAppBar extends StatelessWidget {
   const TopAppBar({
@@ -18,9 +18,9 @@ class TopAppBar extends StatelessWidget {
       height: 150,
       child: Row(
         children: <Widget>[
-          TopAppBarRight(),
+          TopAppBarLeft(), // TopAppBarLeft
           TopAppCenter(),
-          TopAppBarLeft(),
+          TopAppBarRight(),
         ],
       ),
     );
