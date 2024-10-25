@@ -12,21 +12,21 @@ class TopAppBarRight extends StatelessWidget {
       children: [
         Center(
             child: Container(
-                width: 450,
-                color: Colors.red,
+                width: 400,
+                color: const Color.fromARGB(255, 172, 75, 75),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(4.0),
+                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                       child: ButtonTabBarAction(title: 'Button 1'),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(4.0),
+                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                       child: ButtonTabBarAction(title: 'Button 2'),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(4.0),
+                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                       child: ButtonTabBarAction(title: 'Button 3'),
                     ),
                   ],
@@ -36,6 +36,7 @@ class TopAppBarRight extends StatelessWidget {
   }
 }
 
+///- - - - - - - - - - - - - - - - - - -
 class ButtonTabBarAction extends StatelessWidget {
   const ButtonTabBarAction({
     super.key,
