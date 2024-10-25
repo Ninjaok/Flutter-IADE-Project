@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+
+//* File where the TopAppBarRight class is located and his dependencies
 import 'components/topappbarright.dart';
+//*  File where the TopAppCenter class is located and his dependencies
+import 'components/topappcenter.dart';
+//* File where the TopAppBarLeft class is located and his dependencies
 
 class TopAppBar extends StatelessWidget {
   const TopAppBar({
@@ -14,41 +19,24 @@ class TopAppBar extends StatelessWidget {
         children: <Widget>[
           TopAppBarRight(),
           TopAppCenter(),
-          Column(
-            children: [Text("c")],
-          ),
+          TopAppBarLeft(),
         ],
       ),
     );
   }
 }
 
-class TopAppCenter extends StatelessWidget {
-  const TopAppCenter({
+class TopAppBarLeft extends StatelessWidget {
+  const TopAppBarLeft({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Container(
-          width: 400,
-          color: Color.fromARGB(255, 172, 75, 75),
-          child: Column(
-            children: [
-              Row(children: [
-                Text(
-                  "Center 1",
-                  style: TextStyle(color: Color.fromRGBO(10, 10, 250, 1)),
-                )
-              ]), // title
-              Row(children: [Text("Center 1")]), // description
-              Row(children: [Text("Center 1")]) // View history data
-            ],
-          ),
-        ),
+        Row(children: [Text("Top")]),
+        Row(children: [Text("Bottom")])
       ],
     );
   }
