@@ -7,32 +7,31 @@ class TopAppBarRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        Center(
-            child: Container(
-                width: 400,
-                color: const Color.fromARGB(255, 172, 75, 75),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                      child: ButtonTabBarAction(title: 'Button 1'),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                      child: ButtonTabBarAction(title: 'Button 2'),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                      child: ButtonTabBarAction(title: 'Button 3'),
-                    ),
-                  ],
-                )))
-      ],
-    );
+    return Container(
+        width: 400,
+        color: const Color.fromARGB(255, 172, 75, 75),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5),
+                  child: ButtonTabBarAction(title: 'Button 1'),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5),
+                  child: ButtonTabBarAction(title: 'Button 2'),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5),
+                  child: ButtonTabBarAction(title: 'Button 3'),
+                ),
+              ],
+            ),
+          ],
+        ));
   }
 }
 

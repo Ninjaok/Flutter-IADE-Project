@@ -11,7 +11,10 @@ class MainPage extends StatelessWidget {
       child: Container(
         color: Colors.blue,
         child: const Center(
-          child: Text("pAGE"),
+          child: Text(
+            "pAGE",
+            textAlign: TextAlign.center,
+          ),
         ),
       ),
     );

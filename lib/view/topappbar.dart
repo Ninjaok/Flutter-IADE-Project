@@ -5,6 +5,7 @@ import 'components/topappbarright.dart';
 //*  File where the TopAppCenter class is located and his dependencies
 import 'components/topappcenter.dart';
 //* File where the TopAppBarLeft class is located and his dependencies
+import 'components/topappbarleft.dart';
 
 class TopAppBar extends StatelessWidget {
   const TopAppBar({
@@ -22,22 +23,6 @@ class TopAppBar extends StatelessWidget {
           TopAppBarLeft(),
         ],
       ),
-    );
-  }
-}
-
-class TopAppBarLeft extends StatelessWidget {
-  const TopAppBarLeft({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(children: [Text("Top")]),
-        Row(children: [Text("Bottom")])
-      ],
     );
   }
 }

@@ -7,39 +7,35 @@ class TopAppCenter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          width: 250,
-          color: Color.fromARGB(255, 172, 75, 75),
-          child: Column(
-            children: [
-              Row(children: [
-                Text(
-                  "Center 1",
-                  style: TextStyle(fontSize: 20),
-                  textAlign: TextAlign.center,
-                )
-              ]), // title
-              Row(children: [
-                Text(
-                  "Center 1",
-                  style: TextStyle(fontSize: 16),
-                  textAlign: TextAlign.center,
-                )
-              ]), // description
-              Row(children: [
-                Text(
-                  "Center 1",
-                  style: TextStyle(fontSize: 16),
-                  textAlign: TextAlign.center,
-                )
-              ]) // View history data
-            ],
-          ),
-        ),
-      ],
+    return Container(
+      width: 250,
+      color: Color.fromRGBO(255, 230, 0, 1),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Text(
+              "Center 1",
+              style: TextStyle(fontSize: 20),
+              textAlign: TextAlign.center,
+            )
+          ]), // title
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Text(
+              "Center 1",
+              style: TextStyle(fontSize: 16),
+              textAlign: TextAlign.center,
+            )
+          ]), // description
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Text(
+              "Center 1",
+              style: TextStyle(fontSize: 16),
+              textAlign: TextAlign.center,
+            )
+          ]) // View history data
+        ],
+      ),
     );
   }
 }
